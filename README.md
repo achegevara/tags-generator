@@ -1,6 +1,6 @@
 Test-task. Tags generator developed with HTML/CSS/vanilla JS.
 
-The result file index.html is situated in the «/dist» folder. 
+The result file **index.html** is situated in the «**/dist**» folder. 
 And all the source(pre-build) files are available in the «/src» one.
 
 Some features, that can not be visible on the UI:
