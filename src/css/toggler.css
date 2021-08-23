@@ -1,0 +1,70 @@
+.toggler__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+    position: absolute;
+}
+
+.toggler__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 16px 21px;
+}
+
+.toggler__state_mode {
+    margin: 0 12px;
+}
+
+.toggler__control {
+    width: 52px;
+    height: 28px;
+    background: #ffff;
+    border: 1px solid #DDE2E5;
+    box-sizing: border-box;
+    border-radius: 16px;
+    position: relative;
+}
+
+.toggler__control-inner {
+    width: 22px;
+    height: 22px;
+    background: #DDE2E5;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease, background 0.5s ease;
+}
+
+.toggler__legend {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    margin-left: 12px;
+}
+
+.toggler__legend::after {
+    content: "OFF";
+}
+
+.toggler__input:checked~.toggler__state .toggler__control {
+    border: 1px solid #4263EB;
+    background: #4263EB;
+    transition: background 0.5s ease;
+}
+
+.toggler__input:checked~.toggler__state .toggler__control-inner {
+    background: #ffff;
+    left: 75%;
+}
+
+.toggler__input:checked~.toggler__state .toggler__legend::after {
+    content: "ON";
+}

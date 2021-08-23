@@ -1,0 +1,24 @@
+@import './fonts.css';
+@import './tagGenerator.css';
+@import './toggler.css';
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    overflow-y: visible;
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.disabled, .disabled * {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+}

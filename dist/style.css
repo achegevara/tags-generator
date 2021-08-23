@@ -1,0 +1,226 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fonts.css ***!
+  \*********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fonts.css (1) ***!
+  \*************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fonts.css (2) ***!
+  \*************************************************************************/
+
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/tagGenerator.css ***!
+  \****************************************************************************/
+.tagGenerator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 220px;
+    max-height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    border: solid 1px #DDE2E5;
+    border-radius: 15px;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.tagGenerator__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tagGenerator__input {
+    margin: 20px 0;
+    height: 56px;
+    width: 50%;
+    min-width: 190px;
+    background: #ffff;
+    border: 1px solid #DDE2E5;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #495057;
+    line-height: 26px;
+    padding: 17px 0 13px 24px;
+    outline: none;
+    appearance: none;
+}
+
+.tagGenerator__input:focus {
+    border: 1px solid #4263EB;
+    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.tagGenerator__button {
+    margin: 20px 0;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffff;
+    border-radius: 8px;
+    border: none;
+    width: 30%;
+    min-width: 80px;
+    height: 56px;
+    background: #4263EB;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.tagGenerator__button:hover {
+    background: #2342C0;
+}
+
+.tagGenerator__tagsArea {
+    height: fit-content;
+    min-height: 200px;
+    width: 100%;
+    background-color: white;
+    border: solid 1px #DDE2E5;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.tagGenerator__tag {
+    min-width: 70px;
+    min-height: 30px;
+    width: fit-content;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 30px;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffff;
+    border-radius: 8px;
+    border: none;
+    background: #7048E8;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.tagGenerator__cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #ffff;
+}
+
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/toggler.css ***!
+  \***********************************************************************/
+.toggler__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+    position: absolute;
+}
+
+.toggler__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 16px 21px;
+}
+
+.toggler__state_mode {
+    margin: 0 12px;
+}
+
+.toggler__control {
+    width: 52px;
+    height: 28px;
+    background: #ffff;
+    border: 1px solid #DDE2E5;
+    box-sizing: border-box;
+    border-radius: 16px;
+    position: relative;
+}
+
+.toggler__control-inner {
+    width: 22px;
+    height: 22px;
+    background: #DDE2E5;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transition: left 0.5s ease, background 0.5s ease;
+}
+
+.toggler__legend {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    margin-left: 12px;
+}
+
+.toggler__legend::after {
+    content: "OFF";
+}
+
+.toggler__input:checked~.toggler__state .toggler__control {
+    border: 1px solid #4263EB;
+    background: #4263EB;
+    transition: background 0.5s ease;
+}
+
+.toggler__input:checked~.toggler__state .toggler__control-inner {
+    background: #ffff;
+    left: 75%;
+}
+
+.toggler__input:checked~.toggler__state .toggler__legend::after {
+    content: "ON";
+}
+
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/app.css ***!
+  \**********************************************************************************************************/
+html {
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  overflow-y: visible;
+  font-family: 'Roboto', sans-serif; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.disabled, .disabled * {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  user-select: none; }
+
+
+/*# sourceMappingURL=style.css.map*/
