@@ -10,7 +10,7 @@ Some features, that can not be visible on the UI:
 
 As usual, type
 
-«npm install
-npm run build»
+«npm install<br>
+npm run build»<br>
 
 in the project directory if you want to rebuild the project using webpack.
