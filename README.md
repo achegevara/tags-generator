@@ -1,5 +1,6 @@
 Test-task. Tags generator developed with HTML/CSS/vanilla JS.
 
+You can find the demo here: https://achegevara.github.io/tags-generator-demo/ <br>
 The result file **index.html** is situated in the «**/dist**» folder. 
 And all the source(pre-build) files are available in the «/src» one.
 
